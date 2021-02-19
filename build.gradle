@@ -24,3 +24,9 @@ task positive_test(type: Test){
         includeTags 'positive'
     }
 }
+
+task negative_test(type: Test){
+    useJUnitPlatform(){
+        includeTags 'negative'
+    }
+}
