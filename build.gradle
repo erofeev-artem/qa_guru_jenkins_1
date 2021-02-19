@@ -1,11 +1,21 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.8.1'
 }
 
 version '11'
 
 repositories {
     mavenCentral()
+}
+
+allure {
+    autoconfigure = true
+    version = '2.13.8'
+
+    useJUnit5 {
+        version = '2.13.8'
+    }
 }
 
 dependencies {
